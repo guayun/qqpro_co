@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>QQPro官网</title>
+  <link href="https://jihulab.com/guas/gua/raw/main/icons/index.png" rel="shortcut icon">
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft yahei", Arial;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(https://jihulab.com/guas/gua/raw/main/images/background.svg) center;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.top {
+  padding-top: 5vh;
+}
+
+.footer {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.nickname {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+  ul {
+    width: 240px;
+  }
+
+  .user-warp {
+    width: 100px;
+  }
+
+  ul li .icon-box {
+    width: 170px;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:960px) {
+  ul {
+    width: 500px;
+  }
+
+  .user-warp {
+    width: 130px;
+  }
+
+  ul li .icon-box {
+    width: 430px;
+  }
+}
+
+@media screen and (min-width:960px) {
+  ul {
+    width: 500px;
+  }
+
+  .user-warp {
+    width: 130px;
+  }
+
+  ul li .icon-box {
+    width: 430px;
+  }
+}
+
+ul {
+  margin-top: 3vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+ul li .icon-box {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+div,
+p,
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hitokoto {
+  font-size: 18px;
+}
+
+.user-warp {
+  border-radius: 100%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.page-num {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.page {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.page a {
+  text-decoration: none;
+  padding: 7px 13px;
+  border-radius: 100%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+  </style>
+</head>
+<body>
+  <div align="center" class="top">
+    <p class="nickname">QQPro官网</p><br>
+    <ul>
+      <div align="left" style="margin-left: 20px;">
+      尊敬的用户：</div><br>
+        <div align="left" style="margin-left: 50px;">您好！<br>官网地址已更换为qqpro.cc</div><br>
+        <div align="right" style="margin-right: 20px;">呱呱云<br>2022.11.22</div><br>
+        <li><a class="icon-box" href="https://qqpro.cc">点击前往</a></li>
+      <div class="page">
+        <a href="?page=1">1</a>
+        <p class="page-num">第1页/共1页</p>
+      </div>
+    </ul>
+    <p class="footer">&copy;呱呱不识字<br><a href="https://icp.gov.moe/?keyword=20220333" target="_blank">萌ICP备20220333号</a><br>本站已安全运行<a id="momk"></a></p>
+  </div>
+  <script>
+    function show_date_time() {
+        window.setTimeout("show_date_time()", 1000);
+				BirthDay = new Date("2020/05/09 09:30:24");
+				today = new Date();
+				timeold = (today.getTime() - BirthDay.getTime());
+				sectimeold = timeold / 1000
+				secondsold = Math.floor(sectimeold);
+				msPerDay = 24 * 60 * 60 * 1000
+				e_daysold = timeold / msPerDay
+				daysold = Math.floor(e_daysold);
+				e_hrsold = (daysold - e_daysold) * -24;
+				hrsold = Math.floor(e_hrsold);
+				e_minsold = (hrsold - e_hrsold) * -60;
+				minsold = Math.floor((hrsold - e_hrsold) * -60);
+				seconds = Math.floor((minsold - e_minsold) * -60);
+				momk.innerHTML = daysold + "天" + hrsold + "时" + minsold + "分" + seconds + "秒";
+			}
+			show_date_time();
+		</script>
+</body>
+</html>
